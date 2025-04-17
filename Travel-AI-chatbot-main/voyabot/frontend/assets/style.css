@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Apply background images to different pages based on session state */
+[data-testid="stApp"] {
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Authentication Page */
+.auth-page [data-testid="stApp"] {
+    background-image: url('https://img.freepik.com/premium-photo/top-view-helpful-methods-travel_1257223-1145.jpg');
+}
+
+/* Option Page */
+.option-page [data-testid="stApp"] {
+    background-image: url('https://wallpaperaccess.com/full/211152.jpg');
+}
+
+.option-page button {
+    background-color: #000000 !important; /* Change button color  */
+    color: #f7f5f5 !important; /* Text color  */
+    font-size: 18px !important; /* Increase text size */
+    padding: 12px 24px !important; /* Increase button size */
+    border-radius: 8px !important; /* Rounded corners */
+    font-weight: bold !important;
+    border: none !important;
+}
+
+/* Chat Page */
+.chat-page [data-testid="stApp"] {
+    background-color: lightblue !important;
+}
+
+/* Questionnaire Page */
+.questionnaire-page [data-testid="stApp"] {
+    background-image: url('https://wallpapercave.com/wp/wp8918814.jpg');
+}
+
+/* Page Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Fields */
+input {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Chat Messages */
+.chat-message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/* Adjust Streamlit widgets */
+.stTextInput input {
+    border-radius: 5px;
+}
+
+/* ✅ Chat Container */
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+    background: #008080;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ User Message Bubble */
+.user-message {
+    background-color: #dcf8c6; /* WhatsApp light green */
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    text-align: left;
+    margin: 5px 0;
+    align-self: flex-end;
+}
+
+/* ✅ Bot Message Bubble */
+.bot-message {
+    background-color: #e4e6eb; /* Light gray */
+    color: black;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    text-align: left;
+    margin: 5px 0;
+    align-self: flex-start;
+}
+
+/* ✅ Timestamp */
+.timestamp {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    text-align: right;
+    margin-top: 3px;
+}
+
+/* ✅ Input Box */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Circular Image Styles */
+.stImage img {
+    width: 200px;  /* Increase the size */
+    height: 200px;
+    border-radius: 50%; /* Ensure circular shape */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    border: 3px solid white; /* Optional: adds a white border around images */
+    object-fit: cover; /* Ensures the image covers the circle */
+}
+
+.stImage img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
